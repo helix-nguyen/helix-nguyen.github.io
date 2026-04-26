@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Editorial paper palette */
+    --background: 38 33% 96%;        /* warm off-white paper */
+    --foreground: 220 24% 12%;       /* deep ink */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 38 30% 98%;
+    --card-foreground: 220 24% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 38 33% 96%;
+    --popover-foreground: 220 24% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 220 28% 14%;          /* ink */
+    --primary-foreground: 38 33% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 22% 90%;
+    --secondary-foreground: 220 24% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 18% 88%;
+    --muted-foreground: 220 10% 38%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 28 78% 48%;            /* warm ochre / amber */
+    --accent-foreground: 38 33% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 38 33% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 15% 82%;
+    --input: 30 15% 82%;
+    --ring: 28 78% 48%;
 
-    --radius: 0.5rem;
+    --ink: 220 28% 14%;
+    --ink-soft: 220 16% 26%;
+    --paper: 38 33% 96%;
+    --paper-deep: 35 24% 92%;
+    --ochre: 28 78% 48%;
+    --ochre-soft: 32 70% 60%;
+    --rule: 220 14% 18%;
+
+    --gradient-warm: radial-gradient(ellipse at top, hsl(35 40% 92%) 0%, hsl(38 33% 96%) 60%);
+    --gradient-ink: linear-gradient(180deg, hsl(220 28% 14%) 0%, hsl(220 30% 9%) 100%);
+    --shadow-paper: 0 1px 0 hsl(30 14% 80%), 0 20px 40px -24px hsl(220 30% 14% / 0.18);
+    --shadow-lift: 0 30px 60px -30px hsl(220 30% 14% / 0.35);
+
+    --font-serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -99,7 +117,68 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(circle at 18% 0%, hsl(35 40% 92%) 0%, transparent 55%),
+      radial-gradient(circle at 92% 100%, hsl(28 50% 90%) 0%, transparent 55%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--ochre) / 0.25);
+    color: hsl(var(--ink));
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
   }
 }
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--ink) / 0.3), transparent);
+  }
+
+  .ink-underline {
+    background-image: linear-gradient(hsl(var(--ochre) / 0.55), hsl(var(--ochre) / 0.55));
+    background-size: 100% 0.22em;
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+  }
+
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 50s linear infinite; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
