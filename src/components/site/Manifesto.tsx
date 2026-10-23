@@ -7,7 +7,7 @@ const tenets = [
   {
     n: "02",
     title: "Abstract → concrete.",
-    body: "I enjoy theory only when it lands. A model is interesting; a 95% accuracy on 1,000 test cases is the point.",
+    body: "I enjoy theory only when it lands. A model is interesting; a 96%-accuracy tool that reframes textbooks is the point.",
   },
   {
     n: "03",

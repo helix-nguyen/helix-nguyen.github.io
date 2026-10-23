@@ -1,33 +1,33 @@
 const awards = [
   {
     year: "2025",
-    title: "Grand Prize — 21st Youth & Children's Creativity Contest",
-    detail: "National round. Top honor among five 1st Prize winners across 1000+ teams. Built an AI that reframes textbook content to hook student interest — targeting structural flaws in Vietnamese education. 96% accuracy.",
+    title: "Grand Prize — Youth & Children's Creativity Contest",
+    detail: "National round. Top honor among five 1st Prize-winning teams out of 1,000+ entries. Led the team that built an AI reframing textbook content for disengaged students — 96% accuracy.",
   },
   {
     year: "2026",
-    title: "Pioneer Research Institute — Full Scholarship",
-    detail: "6-person cohort selected from 3,000+ applicants. Mentored by Northwestern Feinberg faculty.",
+    title: "Pioneer Research Institute — $7,465 Full-Tuition Scholarship",
+    detail: "6-student cohort selected from 7,000+ applicants. Mentored by faculty affiliated with Northwestern Feinberg School of Medicine.",
   },
   {
-    year: "2025",
-    title: "Senior Mathematical Challenge — Silver",
-    detail: "Top 35%. 25 questions across number theory, geometry, algebra, logic.",
-  },
-  {
-    year: "2025",
-    title: "Immerse Education Essay Competition — 65% Scholarship",
+    year: "2026",
+    title: "Immerse Education Essay Competition — 95% Total Scholarship",
     detail: "Essays on the extent to which neural networks mimic the human brain.",
   },
   {
-    year: "2024–25",
-    title: "SOICT 2024 — Conference Presentation",
-    detail: "GAN-CFM + GBT ensemble for diabetes prediction.",
+    year: "2026",
+    title: "TheNextX AI and Business Competition — 15/150 National",
+    detail: "Ranked 1st of 7 Hanoi teams and 15th of 150 teams nationally.",
   },
   {
-    year: "2024",
-    title: "CS50x — Completed",
-    detail: "Harvard's introduction to computer science.",
+    year: "2026",
+    title: "Leadership Initiatives — 80% Scholarship (~$2,750)",
+    detail: "Selected as 1 of 2 international students out of 100+ applicants.",
+  },
+  {
+    year: "2025",
+    title: "UKMT International Senior Mathematical Challenge — Silver",
+    detail: "25 questions across number theory, geometry, algebra, logic.",
   },
 ];
 
