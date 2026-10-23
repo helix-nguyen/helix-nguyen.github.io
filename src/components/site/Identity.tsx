@@ -1,9 +1,9 @@
 const traits = [
-  { label: "Precision", value: 92, note: "Algorithms that hit 95–96% accuracy. Edits that survive review." },
-  { label: "Flexibility", value: 84, note: "From RPG code to TEDx curation in the same week." },
-  { label: "Initiative", value: 90, note: "President, organizer, ambassador — I tend to start things." },
-  { label: "Discipline", value: 88, note: "Daily writing, weekly sessions, multi-month projects shipped." },
-  { label: "Empathy in leadership", value: 80, note: "27 hours tutoring 7 struggling classmates through OOP." },
+  { label: "Precision", value: 92, note: "A 96%-accuracy study tool. Datasets cleaned row by row. Edits that survive review." },
+  { label: "Flexibility", value: 84, note: "From bioethics papers to TEDx curation to OpenCV in the same month." },
+  { label: "Initiative", value: 90, note: "Founder, president, organizer — I tend to start things." },
+  { label: "Discipline", value: 88, note: "Daily writing, twice-weekly meditation sessions, multi-month research shipped." },
+  { label: "Empathy in leadership", value: 80, note: "Peer study sessions that moved 6 classmates from 6s to 7s." },
   { label: "Comfort with ambiguity", value: 86, note: "Lives in 'both/and', not 'either/or'." },
 ];
 
