@@ -1,48 +1,53 @@
 const activities = [
   {
+    title: "President · Meditation Club",
+    status: "Aug 2025 — Now",
+    body: "Host 30-minute meditation sessions every Monday & Friday for 10+ students. Purpose: train the brain to notice and terminate distractions — staying in flow.",
+  },
+  {
     title: "Writer · @helix_executes",
-    status: "On hold",
-    body: "Daily writing on systems, efficiency, and agency. 100+ followers, 10K impressions/week, 10%+ engagement at peak.",
+    status: "Jan 2025 — Now",
+    body: "Daily writing on self-development, efficiency, and agency. 200+ posts, 10,000 impressions/week, 10%+ engagement rate.",
   },
   {
     title: "Co-Head of Curation · TEDx",
-    status: "Nov 2025",
-    body: "Helping shape the lineup and the room. Earlier: organized & spoke at a 1.5-hour majors-and-careers talk for 120+ teens.",
+    status: "Dec 2024 — May 2026",
+    body: "Interviewed 21 candidates across Hanoi and selected 9 — trained their speech-giving, coordinated stage movement, met 1-on-1 to boost morale.",
   },
   {
-    title: "Cultural Ambassador · Friends of Vietnam Heritage",
+    title: "Vice Head of Publicity & Translator · Friends of Vietnam Heritage",
     status: "Jul 2025 — Now",
-    body: "Translated 5+ traditions across 20+ Vietnamese workers and 20+ English speakers — 12+ hours of minigames, tours, excursions around Hanoi.",
+    body: "Live-translated 12+ hours of exchanges between 20+ local workers and 20+ English speakers around Hanoi. Translated 5+ articles, videos, and podcasts into Vietnamese.",
   },
   {
-    title: "Translator · Education for Vietnamese Youth",
+    title: "Head of Content · Beyond Words",
+    status: "May 2024 — Dec 2025",
+    body: "Content for Vietnamese Sign Language workshops with Kym Viet, a business run by the deaf and disabled community. Analyzed a 700+-participant deaf-awareness survey.",
+  },
+  {
+    title: "Vice-President · The Embers of War",
     status: "Jul 2025 — Now",
-    body: "STEM articles, videos, podcasts — English → Vietnamese — so the knowledge actually reaches the kids it's for.",
+    body: "Student-led charity for Vietnamese Agent Orange victims. Partnered with the Hoa Binh Humanitarian Center; bake sale raised VND 15m for 10 affected families.",
   },
   {
     title: "Brand Controller · SEIA (school business club)",
-    status: "Sep 2025 — Now",
+    status: "Sep 2025 — May 2026",
     body: "Content calendar, visual standards, engagement analytics. Currently the only media member operating at this layer.",
   },
   {
-    title: "Volunteer · Children's International Summer Village",
+    title: "Organizer & Speaker · Career Talk Event",
+    status: "Dec 2024 — Jan 2025",
+    body: "Delivered a 1.5-hour talk on majors and careers to 120+ teens, co-led with 5 classmates and 3 mentor teachers.",
+  },
+  {
+    title: "Social Volunteer · Children's International Summer Village",
     status: "Jul 2025",
-    body: "Promoted from regional participant to international supporter. Kept the peace, steered kids away from overpriced stalls, recovered a lost child in under two minutes.",
+    body: "Kept the peace among camp participants, guided trips for supplies, and coordinated activities among middle schoolers.",
   },
   {
-    title: "Environmental Volunteer · Green Life",
-    status: "Dec 2024 — Mar 2025",
-    body: "Potted 47 trees. Recycled 620 kg of trash. Advised 360 people trading waste for plants.",
-  },
-  {
-    title: "Future President · Meditation Club",
-    status: "Coming",
-    body: "30-minute Friday sessions. Results pending observation — which, fittingly, is the spirit of the thing.",
-  },
-  {
-    title: "Ambassador · Crimson Education Competitions",
-    status: "Oct 2025 — Now",
-    body: "Surfacing writing, pitching, and problem-solving opportunities to students across Hanoi. 20+ outreach emails sent.",
+    title: "Organizer · Monthly Movie Nights",
+    status: "Feb 2025 — Now",
+    body: "Refreshments with 6 classmates, invites, and correspondence with students, staff, and teachers. Small thing, reliably done.",
   },
 ];
 
@@ -55,9 +60,7 @@ export const Activities = () => {
           The other half<br />of the picture.
         </h2>
         <p className="text-ink-soft text-lg leading-relaxed text-pretty">
-          Writing, teaching, translating, organizing, recycling, mediating
-          summer-camp disputes. The throughline: <em>making something work for
-          someone else</em>.
+          Writing, meditating, translating, curating, fundraising, hosting movie nights. The throughline: <em>making something work for someone else</em>.
         </p>
       </div>
 

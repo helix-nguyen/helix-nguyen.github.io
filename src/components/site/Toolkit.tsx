@@ -1,19 +1,19 @@
 const groups = [
   {
-    label: "Languages & Stack",
-    items: ["Python", "scikit-learn", "TensorFlow", "Scratch", "LaTeX"],
+    label: "Programming",
+    items: ["Python", "HTML / CSS / JavaScript", "scikit-learn", "TensorFlow"],
   },
   {
     label: "Methods",
-    items: ["Prompt engineering", "Stacked ensembles", "Data preprocessing", "Augmentation", "Diffusion models"],
+    items: ["Prompt engineering", "Stacked ensembles", "Data preprocessing", "Augmentation"],
   },
   {
     label: "Tools",
-    items: ["Figma", "Notion", "VSCode", "Cursor", "Trello", "Atlas", "Google Suite"],
+    items: ["Figma", "Notion", "VSCode", "LaTeX", "Cursor", "Trello", "Atlas", "Google Suite"],
   },
   {
-    label: "Soft, but structural",
-    items: ["Discipline", "Consistency", "Reliability", "Action-oriented critical thinking", "Efficiency-led leadership"],
+    label: "Interests",
+    items: ["Logical reasoning", "Puzzles", "Meditation", "Cultural translation", "Mentorship"],
   },
 ];
 
